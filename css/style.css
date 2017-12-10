@@ -24,6 +24,14 @@ nav a, h1, h2, h3, h4 {
     text-decoration: none;
 }
 
+.real-header, .concept {
+    background-image: url('../img/background01.jpg');
+    width:100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+	background-position: center center;
+}
+
 #logo {
 	display: flex;
 	justify-content: space-between;
@@ -60,16 +68,19 @@ header nav a:hover {
 }
 
 
-.banner {
+.presentation {
     background-image: url('../img/01.jpg');
+    width:100%;
+    background-size:cover;
     background-repeat: no-repeat;
-	background-position: center bottom;
+	background-position: center center;
 	background-color: #888;
 	color: white;
 }
 
 
-.presentation {
+.banner {
+    margin : 10rem;
 	padding: 5rem 0 10rem;
 	
 }
@@ -90,7 +101,8 @@ header nav a:hover {
 }
 
 .concept i.fa {
-    color : white;
+    /*color : white;*/
+    color: #fef6eb;
     text-align: center;
     background-color:rgb(182, 69, 69) ;
     border-radius : 50%;
@@ -98,4 +110,20 @@ header nav a:hover {
     padding: 2rem;
     height: 8rem;
     width: 8rem;
+}
+
+.welcome {
+    background-color: #fef6eb;
+}
+
+
+
+
+
+footer {
+    background-image: url('../img/background02.jpg');
+    width:100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+	background-position: center center;
 }
