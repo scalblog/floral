@@ -18,20 +18,20 @@
         <header>
             <div class="row top_head_banner">
                 <div class="col-sm-4">
-                    <p><i class="fa fa-envelope-o" aria-hidden="true"></i> contact@email.com</p>
+                    <a href="mailto:contact@email.com" >Nous écrire <i class="fa fa-envelope-o" aria-hidden="true"></i> contact@email.com</a>
                 </div>
                 <div class="col-sm-4">
-                    <p><i class="fa fa-map-maker" aria-hidden="true"></i> 12 rue Dauphine, Paris 6e</p>
+                    <a href="https://www.google.fr/maps/place/12+Rue+Dauphine,+75006+Paris/@48.8558069,2.3378829,17z/data=!3m1!4b1!4m5!3m4!1s0x47e671df5b6ec5a1:0x8a3a3e574d974c9b!8m2!3d48.8558034!4d2.3400769" target="_blank">Se rendre au <i class="fa fa-map-maker" aria-hidden="true"></i> 12 rue Dauphine, Paris 6e</a>
                 </div>
                 <div class="col-sm-4">
-                    <p><i class="fa fa-phone" aria-hidden="true"></i> 01 02 03 04 05</p>    
+                <a href="tel:+33102030405">Nous téléphoner <i class="fa fa-phone" aria-hidden="true"></i> 01 02 03 04 05</a>    
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-4">
+            <div class="row no-gutters">
+                <div class="col-sm-3">
                     <p>Logo Flowers</p>
                 </div>
-                <div class="col-sm-8">
+                <div class="col-sm-9">
                     <nav>
                         <a href="">Accueil</a>
                         <a href="">Services</a>
@@ -52,21 +52,27 @@
                     </div>    
                 </div>
             </div>
-            <div class="row">
+            <div class="row concept">
                 <div class="col-sm-4">
                     <h2>Exclusif</h2>
                     <p>sera votre bouquet.</p>
                     <p>Une création originale.</p>
+                    <p><i class="fa fa-clock-o" aria-hidden="true"></i></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae possimus enim amet maiores, veritatis impedit exercitationem aut explicabo quo placeat doloremque voluptatum! Sunt laboriosam dolor, modi deserunt aspernatur recusandae neque?</p>
                 </div>
                 <div class="col-sm-4">
                     <h2>Créatif</h2>
                     <p>est notre état d'esprit.</p>
                     <p>En permanence.</p>
+                    <p><i class="fa fa-lightbulb-o" aria-hidden="true"></i></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae possimus enim amet maiores, veritatis impedit exercitationem aut explicabo quo placeat doloremque voluptatum! Sunt laboriosam dolor, modi deserunt aspernatur recusandae neque?</p>
                 </div>
                 <div class="col-sm-4">
                     <h2>Imaginatif</h2>
                     <p>sera le plaisir de l'offrir</p>
                     <p>accompagné d'un sourire, d'un baiser, d'un Merci.</p>
+                    <p><i class="fa fa-user" aria-hidden="true"></i></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae possimus enim amet maiores, veritatis impedit exercitationem aut explicabo quo placeat doloremque voluptatum! Sunt laboriosam dolor, modi deserunt aspernatur recusandae neque?</p>
                 </div>
             </div>
             <div class="row">
