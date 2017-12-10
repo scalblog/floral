@@ -125,6 +125,7 @@
                         <div class="col-sm-8">
                             <h2>Bienvenue</h2>
                             <p>Nous vous accueillons au 12 rue Dauphine, Paris 6e.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi illo possimus soluta! Distinctio molestiae voluptatem, impedit aut corporis quidem saepe doloremque harum, voluptas magni tenetur recusandae atque itaque voluptate vitae.</p>
                         </div>
                         <div class="col-sm-4">
                             <h2>Services</h2>
@@ -139,6 +140,69 @@
                     </div>
                 </div>
             </section>    
+            <section class="instagram">
+                <div class="container">
+                    
+                    <h3 class="text-center">Nos dernières créations (Instagram)</h2>
+                    
+                    <?php
+                    $insta_url = "https://api.instagram.com/v1/users/self/media/recent/?access_token=317009480.a6bd5b1.0babbdc6fd09421eaa2b7721855a96ee";
+
+
+                    // est ce que Curl est installé ?
+                    /*
+                    if (!function_exists("curl_init")){
+                        die("Désolé cURL n'est pas installé !");
+                    } else {echo "succès curl";}
+                    */
+                   
+
+
+                    
+                    $insta_data = json_decode(file_get_contents('https://api.instagram.com/v1/users/self/media/recent/?access_token=317009480.a6bd5b1.0babbdc6fd09421eaa2b7721855a96ee'));
+                    if($insta_data->meta->code == 200) {
+                        // echo 'Succès token';
+                        
+                        ?>
+                        <div class="col-12 col-sm-10 col-lg-10 text-center">
+                            <img src="<?= $insta_data->data[0]->images->standard_resolution->url ?>" alt="fleuriste-bouquet-1"/>
+                            <img src="<?= $insta_data->data[1]->images->standard_resolution->url ?>" alt="fleuriste-bouquet-2"/>
+                            <img src="<?= $insta_data->data[2]->images->standard_resolution->url ?>" alt="fleuriste-bouquet-3"/>
+                        </div>
+                        <div class="col-12 col-sm-10 col-lg-10 text-center">
+                            <img src="<?= $insta_data->data[3]->images->standard_resolution->url ?>" alt="fleuriste-bouquet-4"/>
+                            <img src="<?= $insta_data->data[4]->images->standard_resolution->url ?>" alt="fleuriste-bouquet-5"/>
+                            <img src="<?= $insta_data->data[5]->images->standard_resolution->url ?>" alt="fleuriste-bouquet-6"/>
+                        </div>
+                        
+                        
+                        
+                        
+                        <?php
+                  
+                        // var_dump($insta_data->data[0]->created_time);
+                        // var_dump($insta_data);
+                        }
+                    
+                    else {
+                        echo 'Impossible de récupérer les images du compte Instagram.';
+                    }
+                    
+                    ?>
+                    <p class="text-center">Découvrez davantage de créations sur notre compte <i class="fa fa-instagram" aria-hidden="true"></i> Instagram.</p>
+
+                </div>
+            </section>
+            <section class="facebook">
+                <div class="container">
+                    
+                    <h3 class="text-center">Notre actualité (Facebook)</h3>
+                    
+
+
+                    <p class="text-center">Retrouvez la suite sur notre page <i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook.</p>
+                </div>
+            </section>
         </main>
         <footer>
             <div class="container">
