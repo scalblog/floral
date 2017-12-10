@@ -9,90 +9,94 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=News+Cycle|Signika" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
   </head>
   <body>
     <div class="container">
         <header>
-            <div class="top_head_banner">
-                <div class="row">
-                    <div class="col-sm">
-                        <p><i class="fa fa-envelope-o" aria-hidden="true"></i> contact@email.com</p>
-                    </div>
-                    <div class="col-sm">
-                        12 Rue Dauphine, Paris 6e
-                    </div>
-                    <div class="col-sm">
-                    <p><i class="fa fa-phone" aria-hidden="true"></i> 01 02 03 04 05</p>
-
-                    </div>
+            <div class="row top_head_banner">
+                <div class="col-sm-4">
+                    <p><i class="fa fa-envelope-o" aria-hidden="true"></i> contact@email.com</p>
+                </div>
+                <div class="col-sm-4">
+                    <p><i class="fa fa-map-maker" aria-hidden="true"></i> 12 rue Dauphine, Paris 6e</p>
+                </div>
+                <div class="col-sm-4">
+                    <p><i class="fa fa-phone" aria-hidden="true"></i> 01 02 03 04 05</p>    
                 </div>
             </div>
-            <div class="logo">
-                <div class="row">
+            <div class="row">
+                <div class="col-sm-4">
+                    <p>Logo Flowers</p>
                 </div>
-                <div>
+                <div class="col-sm-8">
                     <nav>
-                        <ul>
-                            <li>Accueil</li>
-                            <li>Services</li>
-                            <li>Notre histoire</li>
-                            <li>Boutique</li>
-                            <li>Contact</li>
-                        </ul>
+                        <a href="">Accueil</a>
+                        <a href="">Services</a>
+                        <a href="">Notre histoire</a>
+                        <a href="">Boutique</a>
+                        <a href="">Contact</a>                        
                     </nav>
                 </div>
             </div>
         </header>
-        <main>    
+        <main>
             <div class="row">
-                <h1>Fleuriste à Paris</h1>
+                <div class="banner">
+                    <div class="presentation">
+                        <p>Vous êtes unique. Comme nos</p>
+                        <h1>Bouquets</h1>
+                        <p>Pour toute occasion.</p>
+                    </div>    
+                </div>
             </div>
             <div class="row">
-                <h2>Ce que nous proposons</h2>
+                <div class="col-sm-4">
+                    <h2>Exclusif</h2>
+                    <p>sera votre bouquet.</p>
+                    <p>Une création originale.</p>
+                </div>
+                <div class="col-sm-4">
+                    <h2>Créatif</h2>
+                    <p>est notre état d'esprit.</p>
+                    <p>En permanence.</p>
+                </div>
+                <div class="col-sm-4">
+                    <h2>Imaginatif</h2>
+                    <p>sera le plaisir de l'offrir</p>
+                    <p>accompagné d'un sourire, d'un baiser, d'un Merci.</p>
+                </div>
             </div>
             <div class="row">
-                <div class="col-lg-6">Ici une photo</div>
-                <div class="col-lg-6">
-                    <h2>Notre histoire</h2>
+                <div class="col-sm-8">
+                    <h2>Bienvenue</h2>
+                    <p>Nous vous accueillons au 12 rue Dauphine, Paris 6e.</p>
+                </div>
+                <div class="col-sm-4">
+                    <h2>Services</h2>
+                    <ul>
+                        <li>Célébrations</li>
+                        <li>Mariages</li>
+                        <li>Evénements</li>
+                        <li>Cérémonies</li>
+                        <li>Plaisir d'offrir</li>
+                    </ul>
                 </div>
             </div>
         </main>
         <footer>
             <div class="row">
-                <div class="col-sm">
-                    <p>La moindre question ?</p>
-                    <p>Appelez-nous</p>
-                    <p><i class="fa fa-phone" aria-hidden="true"></i> 01 02 03 04 05</p>
-                    <hr />
-                </div>
-                <div class="col-sm">
-                    <p>Pour venir à notre boutique</p>
-                    <p>Découvrez l'itinéraire proposé par</p>
-                    <p>Google Maps</p>
-                </div>
-                <div class="col-sm">
-                    <p>3 of 3</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm">
+                <div class="col-12 col-sm-4">
                     <p>Notre boutique se situe</p>
                     <p>12 rue Dauphine, Paris 6e</p>
-                    <p>Métro Odéon</p>
                 </div>
-                <div class="col-sm">
-                    One of three columns
+                <div class="col-12 col-sm-4">
+                    <p>Texte</p>
                 </div>
-                <div class="col-sm">
-                    <p>Contactez-nous</p>
-                    <p><i class="fa fa-phone" aria-hidden="true"></i> 01 02 03 04 05</p>
-                    <p><i class="fa fa-envelope-o" aria-hidden="true"></i> contact@email.com</p>
-                </div>
-            </div>
-            <div class="row">
-                <div>
-                    <p>Site réalisé par John Doe. Tous droits réservés. 2017</p>
+                <div class="col-12 col-sm-4">
+                    <p>Texte</p>
                 </div>
             </div>
         </footer>
