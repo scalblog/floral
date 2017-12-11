@@ -14,41 +14,50 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
   </head>
   <body>
-      <header>
-            <div class="top_head_banner">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <a href="mailto:contact@email.com" >Nous écrire <i class="fa fa-envelope-o" aria-hidden="true"></i> contact@email.com</a>
-                        </div>
-                        <div class="col-sm-4">
-                            <a href="https://www.google.fr/maps/place/12+Rue+Dauphine,+75006+Paris/@48.8558069,2.3378829,17z/data=!3m1!4b1!4m5!3m4!1s0x47e671df5b6ec5a1:0x8a3a3e574d974c9b!8m2!3d48.8558034!4d2.3400769" target="_blank">Se rendre au <i class="fa fa-map-maker" aria-hidden="true"></i> 12 rue Dauphine, Paris 6e</a>
-                        </div>
-                        <div class="col-sm-4">
+    <!-- Javascript Page UPsport  -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.11&appId=1805573976119672';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script> 
+    <header>
+        <div class="top_head_banner">
+           <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <a href="mailto:contact@email.com" >Nous écrire <i class="fa fa-envelope-o" aria-hidden="true"></i> contact@email.com</a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="https://www.google.fr/maps/place/12+Rue+Dauphine,+75006+Paris/@48.8558069,2.3378829,17z/data=!3m1!4b1!4m5!3m4!1s0x47e671df5b6ec5a1:0x8a3a3e574d974c9b!8m2!3d48.8558034!4d2.3400769" target="_blank">Se rendre au <i class="fa fa-map-maker" aria-hidden="true"></i> 12 rue Dauphine, Paris 6e</a>
+                    </div>
+                    <div class="col-sm-4">
                         <a href="tel:+33102030405">Nous téléphoner <i class="fa fa-phone" aria-hidden="true"></i> 01 02 03 04 05</a>    
-                        </div>
                     </div>
                 </div>
             </div>
+        </div>
             
-            <div class="real-header">
-                <div class="container">
-                    <div class="row no-gutters">
-                        <div class="col-sm-3">
-                            <p>Logo Flowers</p>
-                        </div>
-                        <div class="col-sm-9">
-                            <nav >
-                                <a href="">Accueil</a>
-                                <a href="">Services</a>
-                                <a href="">Notre histoire</a>
-                                <a href="">Boutique</a>
-                                <a href="">Contact</a>                        
-                            </nav>
-                        </div>
+        <div class="real-header">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-sm-3">
+                        <p>Logo Flowers</p>
+                    </div>
+                    <div class="col-sm-9">
+                        <nav >
+                            <a href="">Accueil</a>
+                            <a href="">Services</a>
+                            <a href="">Notre histoire</a>
+                            <a href="">Boutique</a>
+                            <a href="">Contact</a>                        
+                        </nav>
                     </div>
                 </div>
             </div>
+        </div>
             
             <!--
             <nav class="navbar navbar-expand-lg">
@@ -78,7 +87,7 @@
                 </div>
             </nav>
             -->
-        </div>
+        
     </header>
         <main>
             <section class="presentation">
@@ -198,7 +207,8 @@
                     
                     <h3 class="text-center">Notre actualité (Facebook)</h3>
                     
-
+                    <!-- Page UpSPort s affiche ici -->
+                    <div class="fb-page" data-href="https://www.facebook.com/UpSport.UNis/" data-tabs="timeline" data-width="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/UpSport.UNis/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/UpSport.UNis/">UP SPORT Unis pour le Sport</a></blockquote></div>
 
                     <p class="text-center">Retrouvez la suite sur notre page <i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook.</p>
                 </div>
