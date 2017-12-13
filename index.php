@@ -204,13 +204,22 @@
             </section>
             <section class="facebook">
                 <div class="container">
+                    <h3 class="text-center facebook-title">Notre actualité (Facebook)</h3>
                     
-                    <h3 class="text-center">Notre actualité (Facebook)</h3>
-                    
-                    <!-- Page UpSPort s affiche ici -->
-                    <div class="fb-page" data-href="https://www.facebook.com/UpSport.UNis/" data-tabs="timeline" data-width="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/UpSport.UNis/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/UpSport.UNis/">UP SPORT Unis pour le Sport</a></blockquote></div>
+                    <div class="row">
+                        <div class="col-12 col-sm-7 col-lg-7">
+                            <!-- Google Maps -->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.1262245653884!2d2.337888215976662!3d48.85580337928716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671df5b6ec5a1%3A0x8a3a3e574d974c9b!2s12+Rue+Dauphine%2C+75006+Paris!5e0!3m2!1sfr!2sfr!4v1513124392364" width="600" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-                    <p class="text-center">Retrouvez la suite sur notre page <i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook.</p>
+                        </div>
+                        <div class="col-12 col-sm-5 col-lg-5">
+                            <!-- Page UpSPort F B s affiche ici -->
+                            <div class="fb-page" data-href="https://www.facebook.com/UpSport.UNis/" data-tabs="timeline" data-width="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/UpSport.UNis/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/UpSport.UNis/">UP SPORT Unis pour le Sport</a></blockquote></div>
+                        
+                        </div>
+                    </div>
+
+                    <p class="text-center">Retrouvez le reste de notre actualité sur notre page <i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook.</p>
                 </div>
             </section>
         </main>

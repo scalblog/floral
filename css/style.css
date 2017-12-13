@@ -140,6 +140,10 @@ header nav a:hover {
     
 }
 
+.facebook-title {
+    padding-bottom : 2rem;
+}
+
 footer {
     background-image: url('../img/background02.jpg');
     width:100%;
