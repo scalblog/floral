@@ -64,7 +64,7 @@ header nav a {
     color: #fef6eb;
     padding: 1rem 1rem;
     /*text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);*/
-    background-color: #999999;
+    background-color: #999;
     text-decoration : none;
 }
 
@@ -130,8 +130,16 @@ header nav a:hover {
     width: 8rem;
 }
 
-.welcome, .instagram, .facebook {
+.welcome, .instagram, .facebook, .contact {
     background-color: #fef6eb;
+}
+
+.espace {
+    margin-bottom: 2rem;
+}
+
+.instagram, .facebook {
+    text-align: center;
 }
 
 .instagram img {
@@ -145,10 +153,14 @@ header nav a:hover {
 }
 
 
-.contact h2, .contact a, .contact i.fa {
-	color: #25b79f;
+.contact i.fa {
+	color: rgb(182, 69, 163);
 
 } 
+
+.contact {
+    text-align: center;
+}
 
 .contact a {
 	text-decoration: none;
@@ -156,17 +168,19 @@ header nav a:hover {
 }
 
 .contact a:hover{
-  	color: #f0f0e6; 
+  	color: #fef6eb; 
 }
 
-.contact form input, .contact form textarea {
+.contact form input, .contact form textarea, .contact form textarea:active {
    	border-bottom: 1px solid grey;
    	border-top: none;
    	border-left: none;
    	border-right: none; 
    	margin: 1.5rem auto 1.5rem;
-   	background-color: #07374a;
-   	color: #f0f0e6;
+   	background-color: #fef6eb ;
+    color: #888;
+    text-align: center;
+    font-size : unset;
 }
 
 .contact form input{
@@ -176,13 +190,15 @@ header nav a:hover {
 
 .contact button{
 	border: 1px solid grey;
-   	background-color: #07374a;
-   	color: #f0f0e6;
+   	background-color: #888;
+    color: #f0f0e6;
+    font-size: unset;
+       
 }
 
 .contact button:hover {
 	background-color: #f0f0e6;
-	color: #25b79f;
+	color: #888;
 }
 
 .contact fieldset  {

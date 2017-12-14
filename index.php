@@ -135,6 +135,9 @@
                             <h2>Bienvenue</h2>
                             <p>Nous vous accueillons au 12 rue Dauphine, Paris 6e.</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi illo possimus soluta! Distinctio molestiae voluptatem, impedit aut corporis quidem saepe doloremque harum, voluptas magni tenetur recusandae atque itaque voluptate vitae.</p>
+                            <p>Métro : Odéon</p>
+                            <p>Vélib : lorem</p>
+                            <p>Parking privé : ipsum </p>
                         </div>
                         <div class="col-sm-4">
                             <h2>Services</h2>
@@ -153,7 +156,7 @@
                 <div class="container">
                     
                     <h3 class="text-center">Nos dernières créations (Instagram)</h2>
-                    
+                    <p>Envie de commander l'une de nos créations ? <a href="#formulaire">Contactez-nous</a>.</p>
                     <?php
                     $insta_url = "https://api.instagram.com/v1/users/self/media/recent/?access_token=317009480.a6bd5b1.0babbdc6fd09421eaa2b7721855a96ee";
 
@@ -205,6 +208,7 @@
             <section class="facebook">
                 <div class="container">
                     <h3 class="text-center facebook-title">Notre actualité (Facebook)</h3>
+                    <p class="espace" >Découvrez nos offres promotionnelles, nos événements, nos créations.</p>
                     
                     <div class="row">
                         <div class="col-12 col-sm-7 col-lg-7">
@@ -219,23 +223,23 @@
                         </div>
                     </div>
 
-                    <p class="text-center">Retrouvez le reste de notre actualité sur notre page <i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook.</p>
+                    <p class="text-center espace">Retrouvez le reste de notre actualité sur notre page <i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook.</p>
                 </div>
             </section>
-            <section class="contact">
-                <h2>La moindre question ? Contactez-nous.</h2>
+            <section class="contact" id="formulaire">
+                <h3>La moindre question ? Contactez-nous.</h3>
 	        	<p>Nous vous répondrons avec grand plaisir.</p>
 	        	<form action="contact.php" method="POST">
 		        	<fieldset>
 		              		<input type="texte" placeholder="Votre nom" required="" name="name"><br />
 		        		<input type="email" placeholder="Votre email" required="" name="email">
 		        		<textarea rows="5" cols="50" name="message" class="form-control" id="message" placeholder="Tapez ici votre message..." tabindex="4" required></textarea>
-		        		<button type="submit" class="btn btn-start-order">Envoyer le message <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+		        		<button type="submit" class=" espace btn btn-start-order">Envoyer le message <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
 		        	</fieldset>
 	        	</form>
             </section>
-        </main>
-        <footer>
+        </main><!--
+        --><footer>
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-sm-4">
