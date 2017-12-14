@@ -144,6 +144,59 @@ header nav a:hover {
     padding-bottom : 2rem;
 }
 
+
+.contact h2, .contact a, .contact i.fa {
+	color: #25b79f;
+
+} 
+
+.contact a {
+	text-decoration: none;
+	padding: 0 1.5rem 0 1.5rem;
+}
+
+.contact a:hover{
+  	color: #f0f0e6; 
+}
+
+.contact form input, .contact form textarea {
+   	border-bottom: 1px solid grey;
+   	border-top: none;
+   	border-left: none;
+   	border-right: none; 
+   	margin: 1.5rem auto 1.5rem;
+   	background-color: #07374a;
+   	color: #f0f0e6;
+}
+
+.contact form input{
+	width: 55%;
+	margin: auto;
+}
+
+.contact button{
+	border: 1px solid grey;
+   	background-color: #07374a;
+   	color: #f0f0e6;
+}
+
+.contact button:hover {
+	background-color: #f0f0e6;
+	color: #25b79f;
+}
+
+.contact fieldset  {
+	width: 50%;
+	margin: 1.5rem auto 2rem;
+	border-radius: 10px;
+}
+
+.contact form {
+	padding-top: 2rem;
+	margin-bottom: 5rem;
+}
+
+
 footer {
     background-image: url('../img/background02.jpg');
     width:100%;
@@ -151,3 +204,4 @@ footer {
     background-repeat: no-repeat;
 	background-position: center center;
 }
+

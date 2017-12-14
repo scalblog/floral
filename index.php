@@ -222,6 +222,18 @@
                     <p class="text-center">Retrouvez le reste de notre actualité sur notre page <i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook.</p>
                 </div>
             </section>
+            <section class="contact">
+                <h2>La moindre question ? Contactez-nous.</h2>
+	        	<p>Nous vous répondrons avec grand plaisir.</p>
+	        	<form action="contact.php" method="POST">
+		        	<fieldset>
+		              		<input type="texte" placeholder="Votre nom" required="" name="name"><br />
+		        		<input type="email" placeholder="Votre email" required="" name="email">
+		        		<textarea rows="5" cols="50" name="message" class="form-control" id="message" placeholder="Tapez ici votre message..." tabindex="4" required></textarea>
+		        		<button type="submit" class="btn btn-start-order">Envoyer le message <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+		        	</fieldset>
+	        	</form>
+            </section>
         </main>
         <footer>
             <div class="container">
