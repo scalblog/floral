@@ -1,5 +1,7 @@
 <?php
 
+include 'connect.php';
+
 function get_shops(){
 
     global $db;

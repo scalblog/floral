@@ -1,3 +1,11 @@
+<?php
+    include 'read.php';
+
+    $shops = get_shops();
+
+?>    
+    
+    
 <!doctype html>
 <html lang="fr">
   <head>
@@ -21,15 +29,19 @@
 
     $fleuristes = json_decode(file_get_contents('fleuristesparis.json'));
     // var_dump ($fleuristes);
+    // var_dump ($shops);   notons qu ' il fonctionne
+
     ?>
-    <form action="update.php" method="POST">
         <p><b>75001</b></p>
 
         <table>
             <tbody>
             <?php
             foreach ($fleuristes as $key => $fleuriste) {
-            
+                
+            ?>
+            <form action="update.php" method="POST">
+            <?php
             if($fleuriste->fields->arro == 75001) {
             ?>
                 <tr>
@@ -42,19 +54,21 @@
                     </td>
                     <td> | Et site web responsive ? 
                         <input type="radio" name="responsive" value="oui" id="responsiveyes" /> <label for="responsiveyes">oui</label>
-                        <input type="radio" name="responsive" value="non" id="responsiveno" /> <label for="responsive">non</label>
+                        <input type="radio" name="responsive" value="non" id="responsiveno" /> <label for="responsiveno">non</label>
                         <input type="radio" name="responsive" value="maybe" id="responsivecheck" /> <label for="responsivecheck">à verifier</label>
                     </td>
                     
-                    <td><label for="contact">| Contact</label> : <input type="text" name="contact" id="contact" /></td>
-                    <td><label for="notes">| Notes </label> : <input type="notes" name="notes" id="notes" placeholder="pas fait"/></td>
+                    <!-- <td><label for="contact">| Contact</label> : <input type="text" name="contact" id="contact" /></td> -->
+                    <td>Contact  :  <input type="text" name="contact" /></td>
+                    <td><label for="notes">| Notes </label> : <input type="text" name="notes" id="notes" placeholder="pas fait"/></td>
                     <td><i class="fa fa-floppy-o" aria-hidden="true"></i> <input type="submit" value="enregistrer" /></td>
                 </tr>
             <?php    }
             }
+            
+            ?>
 
-        ?>
-
+            </form>
             
             </tbody>
         
@@ -350,7 +364,6 @@
             }
 
         ?>
-    </form>
 
     </main>
 
