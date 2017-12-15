@@ -1,15 +1,30 @@
-
-header {
- background-color: #ffffff;
- color: #9d9d9d;
+nav.another-navbar {
+    background-color: rgb(182, 69, 163);
 }
 
-.top_head_banner {
-    background-color: #272727;
-    color : #9d9d9d;
+nav.another-navbar .navbar-brand{
+    background-color: unset;
+    color : #F2F2F2) !important;
+    /* color : rgb(182, 69, 163) !important; */
+    font-size: 3rem;
+}
+nav.another-navbar li.nav-item {
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
-footer {
-    background-color: #272727;
-    color: #93b41d;
+nav.another-navbar a,
+nav.another-navbar li.nav-item {
+    background-color: unset !important;
+    /* color : rgb(182, 69, 163) !important; */
+    color: #F2F2F2;
+}
+
+nav.another-navbar .navbar-nav li:active {
+    color: blue !important;
+}
+
+nav.another-navbar a.nav-link:hover {
+    color: rgb(182, 69, 163) !important;
+    background-color : #F2F2F2 !important;
 }
