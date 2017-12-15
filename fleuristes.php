@@ -20,31 +20,293 @@
 
     $fleuristes = json_decode(file_get_contents('fleuristesparis.json'));
     // var_dump ($fleuristes);
-
-    // if($fleuristes[0]->fields->arro == 75004) {
-    //     echo ('75004');
-    //  }
-    // else {echo 'another one';}
-
+    ?>
+    <p><b>75001</b></p>
+    <?php
     foreach ($fleuristes as $key => $fleuriste) {
-        // echo ($fleuriste->fields->arro);
-
+          
+        
+        if($fleuriste->fields->arro == 75001) {
         ?>
-
-        <ul>
-            <li>index n°<?= $key ?> <?= $fleuriste->fields->arro ?> : <a href="https://www.google.fr/maps/search/fleuriste+<?= $fleuriste->fields->adresse_complete?>+<?= $fleuriste->fields->arro ?>/" target="_blank"><?= $fleuriste->fields->adresse_complete ?></a></li>
-        </ul>
-
-        <?php
-
-    }
+            <ul>
+                <li>index n°<?= $key ?> <?= $fleuriste->fields->arro ?> : <a href="https://www.google.fr/maps/search/fleuriste+<?= $fleuriste->fields->adresse_complete?>+<?= $fleuriste->fields->arro ?>/" target="_blank"><?= $fleuriste->fields->adresse_complete ?></a></li>
+            </ul>
+        <?php    }
+        }
 
     ?>
 
-    <!-- <h4>75001</h4> -->
+
+<p><b>75002</b></p>
+    <?php
+    foreach ($fleuristes as $key => $fleuriste) {
+          
+        
+        if($fleuriste->fields->arro == 75002) {
+        ?>
+            <ul>
+                <li>index n°<?= $key ?> <?= $fleuriste->fields->arro ?> : <a href="https://www.google.fr/maps/search/fleuriste+<?= $fleuriste->fields->adresse_complete?>+<?= $fleuriste->fields->arro ?>/" target="_blank"><?= $fleuriste->fields->adresse_complete ?></a></li>
+            </ul>
+        <?php    }
+        }
+
+    ?>
+
+<p><b>75003</b></p>
+    <?php
+    foreach ($fleuristes as $key => $fleuriste) {
+          
+        
+        if($fleuriste->fields->arro == 75003) {
+        ?>
+            <ul>
+                <li>index n°<?= $key ?> <?= $fleuriste->fields->arro ?> : <a href="https://www.google.fr/maps/search/fleuriste+<?= $fleuriste->fields->adresse_complete?>+<?= $fleuriste->fields->arro ?>/" target="_blank"><?= $fleuriste->fields->adresse_complete ?></a></li>
+            </ul>
+        <?php    }
+        }
+
+    ?>
+
+<p><b>75004</b></p>
+    <?php
+    foreach ($fleuristes as $key => $fleuriste) {
+          
+        
+        if($fleuriste->fields->arro == 75004) {
+        ?>
+            <ul>
+                <li>index n°<?= $key ?> <?= $fleuriste->fields->arro ?> : <a href="https://www.google.fr/maps/search/fleuriste+<?= $fleuriste->fields->adresse_complete?>+<?= $fleuriste->fields->arro ?>/" target="_blank"><?= $fleuriste->fields->adresse_complete ?></a></li>
+            </ul>
+        <?php    }
+        }
+
+    ?>
+     <p><b>75005</b></p>
+    <?php
+    foreach ($fleuristes as $key => $fleuriste) {
+          
+        
+        if($fleuriste->fields->arro == 75005) {
+        ?>
+            <ul>
+                <li>index n°<?= $key ?> <?= $fleuriste->fields->arro ?> : <a href="https://www.google.fr/maps/search/fleuriste+<?= $fleuriste->fields->adresse_complete?>+<?= $fleuriste->fields->arro ?>/" target="_blank"><?= $fleuriste->fields->adresse_complete ?></a></li>
+            </ul>
+        <?php    }
+        }
+
+    ?>
+     <p><b>75006</b></p>
+    <?php
+    foreach ($fleuristes as $key => $fleuriste) {
+          
+        
+        if($fleuriste->fields->arro == 75006) {
+        ?>
+            <ul>
+                <li>index n°<?= $key ?> <?= $fleuriste->fields->arro ?> : <a href="https://www.google.fr/maps/search/fleuriste+<?= $fleuriste->fields->adresse_complete?>+<?= $fleuriste->fields->arro ?>/" target="_blank"><?= $fleuriste->fields->adresse_complete ?></a></li>
+            </ul>
+        <?php    }
+        }
+
+    ?>
+     <p><b>75007</b></p>
+    <?php
+    foreach ($fleuristes as $key => $fleuriste) {
+          
+        
+        if($fleuriste->fields->arro == 75007) {
+        ?>
+            <ul>
+                <li>index n°<?= $key ?> <?= $fleuriste->fields->arro ?> : <a href="https://www.google.fr/maps/search/fleuriste+<?= $fleuriste->fields->adresse_complete?>+<?= $fleuriste->fields->arro ?>/" target="_blank"><?= $fleuriste->fields->adresse_complete ?></a></li>
+            </ul>
+        <?php    }
+        }
+
+    ?>
+     <p><b>75008</b></p>
+    <?php
+    foreach ($fleuristes as $key => $fleuriste) {
+          
+        
+        if($fleuriste->fields->arro == 75008) {
+        ?>
+            <ul>
+                <li>index n°<?= $key ?> <?= $fleuriste->fields->arro ?> : <a href="https://www.google.fr/maps/search/fleuriste+<?= $fleuriste->fields->adresse_complete?>+<?= $fleuriste->fields->arro ?>/" target="_blank"><?= $fleuriste->fields->adresse_complete ?></a></li>
+            </ul>
+        <?php    }
+        }
+
+    ?>
+     <p><b>75009</b></p>
+    <?php
+    foreach ($fleuristes as $key => $fleuriste) {
+          
+        
+        if($fleuriste->fields->arro == 75009) {
+        ?>
+            <ul>
+                <li>index n°<?= $key ?> <?= $fleuriste->fields->arro ?> : <a href="https://www.google.fr/maps/search/fleuriste+<?= $fleuriste->fields->adresse_complete?>+<?= $fleuriste->fields->arro ?>/" target="_blank"><?= $fleuriste->fields->adresse_complete ?></a></li>
+            </ul>
+        <?php    }
+        }
+
+    ?>
+     <p><b>75010</b></p>
+    <?php
+    foreach ($fleuristes as $key => $fleuriste) {
+          
+        
+        if($fleuriste->fields->arro == 75010) {
+        ?>
+            <ul>
+                <li>index n°<?= $key ?> <?= $fleuriste->fields->arro ?> : <a href="https://www.google.fr/maps/search/fleuriste+<?= $fleuriste->fields->adresse_complete?>+<?= $fleuriste->fields->arro ?>/" target="_blank"><?= $fleuriste->fields->adresse_complete ?></a></li>
+            </ul>
+        <?php    }
+        }
+
+    ?>
+     <p><b>75011</b></p>
+    <?php
+    foreach ($fleuristes as $key => $fleuriste) {
+          
+        
+        if($fleuriste->fields->arro == 75011) {
+        ?>
+            <ul>
+                <li>index n°<?= $key ?> <?= $fleuriste->fields->arro ?> : <a href="https://www.google.fr/maps/search/fleuriste+<?= $fleuriste->fields->adresse_complete?>+<?= $fleuriste->fields->arro ?>/" target="_blank"><?= $fleuriste->fields->adresse_complete ?></a></li>
+            </ul>
+        <?php    }
+        }
+
+    ?>
+     <p><b>75012</b></p>
+    <?php
+    foreach ($fleuristes as $key => $fleuriste) {
+          
+        
+        if($fleuriste->fields->arro == 75012) {
+        ?>
+            <ul>
+                <li>index n°<?= $key ?> <?= $fleuriste->fields->arro ?> : <a href="https://www.google.fr/maps/search/fleuriste+<?= $fleuriste->fields->adresse_complete?>+<?= $fleuriste->fields->arro ?>/" target="_blank"><?= $fleuriste->fields->adresse_complete ?></a></li>
+            </ul>
+        <?php    }
+        }
+
+    ?>
+     <p><b>75013</b></p>
+    <?php
+    foreach ($fleuristes as $key => $fleuriste) {
+          
+        
+        if($fleuriste->fields->arro == 75013) {
+        ?>
+            <ul>
+                <li>index n°<?= $key ?> <?= $fleuriste->fields->arro ?> : <a href="https://www.google.fr/maps/search/fleuriste+<?= $fleuriste->fields->adresse_complete?>+<?= $fleuriste->fields->arro ?>/" target="_blank"><?= $fleuriste->fields->adresse_complete ?></a></li>
+            </ul>
+        <?php    }
+        }
+
+    ?>
+     <p><b>75014</b></p>
+    <?php
+    foreach ($fleuristes as $key => $fleuriste) {
+          
+        
+        if($fleuriste->fields->arro == 75014) {
+        ?>
+            <ul>
+                <li>index n°<?= $key ?> <?= $fleuriste->fields->arro ?> : <a href="https://www.google.fr/maps/search/fleuriste+<?= $fleuriste->fields->adresse_complete?>+<?= $fleuriste->fields->arro ?>/" target="_blank"><?= $fleuriste->fields->adresse_complete ?></a></li>
+            </ul>
+        <?php    }
+        }
+
+    ?>
+     <p><b>75015</b></p>
+    <?php
+    foreach ($fleuristes as $key => $fleuriste) {
+          
+        
+        if($fleuriste->fields->arro == 75015) {
+        ?>
+            <ul>
+                <li>index n°<?= $key ?> <?= $fleuriste->fields->arro ?> : <a href="https://www.google.fr/maps/search/fleuriste+<?= $fleuriste->fields->adresse_complete?>+<?= $fleuriste->fields->arro ?>/" target="_blank"><?= $fleuriste->fields->adresse_complete ?></a></li>
+            </ul>
+        <?php    }
+        }
+
+    ?>
+     <p><b>75016</b></p>
+    <?php
+    foreach ($fleuristes as $key => $fleuriste) {
+          
+        
+        if($fleuriste->fields->arro == 75016) {
+        ?>
+            <ul>
+                <li>index n°<?= $key ?> <?= $fleuriste->fields->arro ?> : <a href="https://www.google.fr/maps/search/fleuriste+<?= $fleuriste->fields->adresse_complete?>+<?= $fleuriste->fields->arro ?>/" target="_blank"><?= $fleuriste->fields->adresse_complete ?></a></li>
+            </ul>
+        <?php    }
+        }
+
+    ?>
+     <p><b>75017</b></p>
+    <?php
+    foreach ($fleuristes as $key => $fleuriste) {
+          
+        
+        if($fleuriste->fields->arro == 75017) {
+        ?>
+            <ul>
+                <li>index n°<?= $key ?> <?= $fleuriste->fields->arro ?> : <a href="https://www.google.fr/maps/search/fleuriste+<?= $fleuriste->fields->adresse_complete?>+<?= $fleuriste->fields->arro ?>/" target="_blank"><?= $fleuriste->fields->adresse_complete ?></a></li>
+            </ul>
+        <?php    }
+        }
+
+    ?>
+     <p><b>75018</b></p>
+    <?php
+    foreach ($fleuristes as $key => $fleuriste) {
+          
+        
+        if($fleuriste->fields->arro == 75018) {
+        ?>
+            <ul>
+                <li>index n°<?= $key ?> <?= $fleuriste->fields->arro ?> : <a href="https://www.google.fr/maps/search/fleuriste+<?= $fleuriste->fields->adresse_complete?>+<?= $fleuriste->fields->arro ?>/" target="_blank"><?= $fleuriste->fields->adresse_complete ?></a></li>
+            </ul>
+        <?php    }
+        }
+
+    ?>
+     <p><b>75019</b></p>
+    <?php
+    foreach ($fleuristes as $key => $fleuriste) {
+          
+        
+        if($fleuriste->fields->arro == 75019) {
+        ?>
+            <ul>
+                <li>index n°<?= $key ?> <?= $fleuriste->fields->arro ?> : <a href="https://www.google.fr/maps/search/fleuriste+<?= $fleuriste->fields->adresse_complete?>+<?= $fleuriste->fields->arro ?>/" target="_blank"><?= $fleuriste->fields->adresse_complete ?></a></li>
+            </ul>
+        <?php    }
+        }
+
+    ?>
+     <p><b>75020</b></p>
+    <?php
+    foreach ($fleuristes as $key => $fleuriste) {
+          
+        
+        if($fleuriste->fields->arro == 75020) {
+        ?>
+            <ul>
+                <li>index n°<?= $key ?> <?= $fleuriste->fields->arro ?> : <a href="https://www.google.fr/maps/search/fleuriste+<?= $fleuriste->fields->adresse_complete?>+<?= $fleuriste->fields->arro ?>/" target="_blank"><?= $fleuriste->fields->adresse_complete ?></a></li>
+            </ul>
+        <?php    }
+        }
+
+    ?>
 
 
-    
     </main>
 
 
