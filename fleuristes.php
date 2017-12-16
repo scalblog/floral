@@ -16,12 +16,34 @@
   <body>
     <main>
     <h2>Liens Google Maps des fleuristes à Paris</h2>
+
+    <a href="#75001">75001</a> | 
+    <a href="#75002">75002</a> | 
+    <a href="#75003">75003</a> | 
+    <a href="#75004">75004</a> | 
+    <a href="#75005">75005</a> | 
+    <a href="#75006">75006</a> | 
+    <a href="#75007">75007</a> | 
+    <a href="#75008">75008</a> | 
+    <a href="#75009">75009</a> | 
+    <a href="#75010">75010</a> | 
+    <a href="#75011">75011</a> | 
+    <a href="#75012">75012</a> | 
+    <a href="#75013">75013</a> | 
+    <a href="#75014">75014</a> | 
+    <a href="#75015">75015</a> | 
+    <a href="#75016">75016</a> | 
+    <a href="#75017">75017</a> | 
+    <a href="#75018">75018</a> | 
+    <a href="#75019">75019</a> | 
+    <a href="#75020">75020</a>
+
     <?php
 
     $fleuristes = json_decode(file_get_contents('fleuristesparis.json'));
     // var_dump ($fleuristes);
     ?>
-    <p><b>75001</b></p>
+    <p id="75001"><b>75001</b></p>
     <?php
     foreach ($fleuristes as $key => $fleuriste) {
           
@@ -37,7 +59,7 @@
     ?>
 
 
-<p><b>75002</b></p>
+<p id="75002"><b>75002</b></p>
     <?php
     foreach ($fleuristes as $key => $fleuriste) {
           
@@ -52,7 +74,7 @@
 
     ?>
 
-<p><b>75003</b></p>
+<p id="75003"><b>75003</b></p>
     <?php
     foreach ($fleuristes as $key => $fleuriste) {
           
@@ -67,7 +89,7 @@
 
     ?>
 
-<p><b>75004</b></p>
+<p id="75004"><b>75004</b></p>
     <?php
     foreach ($fleuristes as $key => $fleuriste) {
           
@@ -81,7 +103,7 @@
         }
 
     ?>
-     <p><b>75005</b></p>
+     <p id="75005"><b>75005</b></p>
     <?php
     foreach ($fleuristes as $key => $fleuriste) {
           
@@ -95,7 +117,7 @@
         }
 
     ?>
-     <p><b>75006</b></p>
+     <p id="75006"><b>75006</b></p>
     <?php
     foreach ($fleuristes as $key => $fleuriste) {
           
@@ -109,7 +131,7 @@
         }
 
     ?>
-     <p><b>75007</b></p>
+     <p id="75007"><b>75007</b></p>
     <?php
     foreach ($fleuristes as $key => $fleuriste) {
           
@@ -123,7 +145,7 @@
         }
 
     ?>
-     <p><b>75008</b></p>
+     <p id="75008"><b>75008</b></p>
     <?php
     foreach ($fleuristes as $key => $fleuriste) {
           
@@ -137,7 +159,7 @@
         }
 
     ?>
-     <p><b>75009</b></p>
+     <p id="75009"><b>75009</b></p>
     <?php
     foreach ($fleuristes as $key => $fleuriste) {
           
@@ -151,7 +173,7 @@
         }
 
     ?>
-     <p><b>75010</b></p>
+     <p id="75010"><b>75010</b></p>
     <?php
     foreach ($fleuristes as $key => $fleuriste) {
           
@@ -165,7 +187,7 @@
         }
 
     ?>
-     <p><b>75011</b></p>
+     <p id="75011"><b>75011</b></p>
     <?php
     foreach ($fleuristes as $key => $fleuriste) {
           
@@ -179,7 +201,7 @@
         }
 
     ?>
-     <p><b>75012</b></p>
+     <p id="75012"><b>75012</b></p>
     <?php
     foreach ($fleuristes as $key => $fleuriste) {
           
@@ -193,7 +215,7 @@
         }
 
     ?>
-     <p><b>75013</b></p>
+     <p id="75013"><b>75013</b></p>
     <?php
     foreach ($fleuristes as $key => $fleuriste) {
           
@@ -207,7 +229,7 @@
         }
 
     ?>
-     <p><b>75014</b></p>
+     <p id="75014"><b>75014</b></p>
     <?php
     foreach ($fleuristes as $key => $fleuriste) {
           
@@ -221,7 +243,7 @@
         }
 
     ?>
-     <p><b>75015</b></p>
+     <p id="75015"><b>75015</b></p>
     <?php
     foreach ($fleuristes as $key => $fleuriste) {
           
@@ -235,7 +257,7 @@
         }
 
     ?>
-     <p><b>75016</b></p>
+     <p id="75016"><b>75016</b></p>
     <?php
     foreach ($fleuristes as $key => $fleuriste) {
           
@@ -249,7 +271,7 @@
         }
 
     ?>
-     <p><b>75017</b></p>
+     <p id="75017"><b>75017</b></p>
     <?php
     foreach ($fleuristes as $key => $fleuriste) {
           
@@ -263,7 +285,7 @@
         }
 
     ?>
-     <p><b>75018</b></p>
+     <p id="75018"><b>75018</b></p>
     <?php
     foreach ($fleuristes as $key => $fleuriste) {
           
@@ -277,7 +299,7 @@
         }
 
     ?>
-     <p><b>75019</b></p>
+     <p id="75019"><b>75019</b></p>
     <?php
     foreach ($fleuristes as $key => $fleuriste) {
           
@@ -291,7 +313,7 @@
         }
 
     ?>
-     <p><b>75020</b></p>
+     <p id="75020"><b>75020</b></p>
     <?php
     foreach ($fleuristes as $key => $fleuriste) {
           

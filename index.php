@@ -138,6 +138,7 @@
                             <p>Métro : Odéon</p>
                             <p>Vélib : lorem</p>
                             <p>Parking privé : ipsum </p>
+                            <p class="metro"><span class="rondplein">4</span>&nbsp;Marcadet-Poissonniers<br> <span class="rondplein">12</span>&nbsp;Marcadet-Poissonniers<br> <span class="rondplein">12</span>&nbsp;Jules-Joffrins</p>
                         </div>
                         <div class="col-sm-4">
                             <h2>Services</h2>
