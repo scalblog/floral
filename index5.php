@@ -206,57 +206,6 @@
 
                 </div>
             </section>
-            <section class="facebooksdk">
-                <div class="container">
-                    <h3 class="text-center facebook-title">Notre actualité 2 (Facebook SDK)</h3>
-                    <?php
-
-                    require_once __DIR__ . '/vendor/autoload.php'; // change path as needed
-
-                    $fb = new \Facebook\Facebook([
-                      'app_id' => '1805573976119672',
-                      'app_secret' => 'bb56a4c0422903333b36517c363e4cd8',
-                      'default_graph_version' => 'v2.11',
-                      'default_access_token' => 'EAACEdEose0cBAKfZAzsZCq3EpTQe8CZBnZCZBViZAdECxZCsbfbyqcLXUem9U3EKSan59KRtBfVnrAA005g2lZB4yI9Nhzg5QL2zUNM0NxhV1wfPOZAZAuA4iLUVcijaN6vKg2ZAxQqUmVz2zYhO0ElDL5SqpqfVucBuXR3KEI1rZBjZCGfOumypZBZC5qSl0H4vZAlGkA0iRBAG4DYaFwZDZD', // optional
-                    ]);
-
-                    $appsecret_proof= hash_hmac('sha256', 'EAACEdEose0cBAKfZAzsZCq3EpTQe8CZBnZCZBViZAdECxZCsbfbyqcLXUem9U3EKSan59KRtBfVnrAA005g2lZB4yI9Nhzg5QL2zUNM0NxhV1wfPOZAZAuA4iLUVcijaN6vKg2ZAxQqUmVz2zYhO0ElDL5SqpqfVucBuXR3KEI1rZBjZCGfOumypZBZC5qSl0H4vZAlGkA0iRBAG4DYaFwZDZD', 'bb56a4c0422903333b36517c363e4cd8');
-
-                    // Use one of the helper classes to get a Facebook\Authentication\AccessToken entity.
-                    //   $helper = $fb->getRedirectLoginHelper();
-                    //   $helper = $fb->getJavaScriptHelper();
-                    //   $helper = $fb->getCanvasHelper();
-                       $helper = $fb->getPageTabHelper();
-
-                    try {
-                      // Get the \Facebook\GraphNodes\GraphUser object for the current user.
-                      // If you provided a 'default_access_token', the '{access-token}' is optional.
-                      $response = $fb->get('/me', 'EAACEdEose0cBAKfZAzsZCq3EpTQe8CZBnZCZBViZAdECxZCsbfbyqcLXUem9U3EKSan59KRtBfVnrAA005g2lZB4yI9Nhzg5QL2zUNM0NxhV1wfPOZAZAuA4iLUVcijaN6vKg2ZAxQqUmVz2zYhO0ElDL5SqpqfVucBuXR3KEI1rZBjZCGfOumypZBZC5qSl0H4vZAlGkA0iRBAG4DYaFwZDZD');
-                    } catch(\Facebook\Exceptions\FacebookResponseException $e) {
-                      // When Graph returns an error
-                      echo 'Graph returned an error: ' . $e->getMessage();
-                      exit;
-                    } catch(\Facebook\Exceptions\FacebookSDKException $e) {
-                      // When validation fails or other local issues
-                      echo 'Facebook SDK returned an error: ' . $e->getMessage();
-                      exit;
-                    }
-
-                    $me = $response->getGraphUser();
-                    echo 'Logged in as ' . $me->getName();
-
-
-                    ?>
-
-
-
-                </div>
-            </section>
-
-
-
-
-
             <section class="facebook">
                 <div class="container">
                     <h3 class="text-center facebook-title">Notre actualité (Facebook)</h3>
