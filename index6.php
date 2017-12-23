@@ -213,37 +213,26 @@
 
                     require_once __DIR__ . '/vendor/autoload.php'; // change path as needed
 
-                    $fb = new \Facebook\Facebook([
-                      'app_id' => '1805573976119672',
-                      'app_secret' => 'bb56a4c0422903333b36517c363e4cd8',
-                      'default_graph_version' => 'v2.11',
-                      'default_access_token' => 'EAACEdEose0cBAKfZAzsZCq3EpTQe8CZBnZCZBViZAdECxZCsbfbyqcLXUem9U3EKSan59KRtBfVnrAA005g2lZB4yI9Nhzg5QL2zUNM0NxhV1wfPOZAZAuA4iLUVcijaN6vKg2ZAxQqUmVz2zYhO0ElDL5SqpqfVucBuXR3KEI1rZBjZCGfOumypZBZC5qSl0H4vZAlGkA0iRBAG4DYaFwZDZD', // optional
-                    ]);
-
-                    $appsecret_proof= hash_hmac('sha256', 'EAACEdEose0cBAKfZAzsZCq3EpTQe8CZBnZCZBViZAdECxZCsbfbyqcLXUem9U3EKSan59KRtBfVnrAA005g2lZB4yI9Nhzg5QL2zUNM0NxhV1wfPOZAZAuA4iLUVcijaN6vKg2ZAxQqUmVz2zYhO0ElDL5SqpqfVucBuXR3KEI1rZBjZCGfOumypZBZC5qSl0H4vZAlGkA0iRBAG4DYaFwZDZD', 'bb56a4c0422903333b36517c363e4cd8');
-
-                    // Use one of the helper classes to get a Facebook\Authentication\AccessToken entity.
-                    //   $helper = $fb->getRedirectLoginHelper();
-                    //   $helper = $fb->getJavaScriptHelper();
-                    //   $helper = $fb->getCanvasHelper();
-                       $helper = $fb->getPageTabHelper();
-
-                    try {
-                      // Get the \Facebook\GraphNodes\GraphUser object for the current user.
-                      // If you provided a 'default_access_token', the '{access-token}' is optional.
-                      $response = $fb->get('/me', 'EAACEdEose0cBAKfZAzsZCq3EpTQe8CZBnZCZBViZAdECxZCsbfbyqcLXUem9U3EKSan59KRtBfVnrAA005g2lZB4yI9Nhzg5QL2zUNM0NxhV1wfPOZAZAuA4iLUVcijaN6vKg2ZAxQqUmVz2zYhO0ElDL5SqpqfVucBuXR3KEI1rZBjZCGfOumypZBZC5qSl0H4vZAlGkA0iRBAG4DYaFwZDZD');
-                    } catch(\Facebook\Exceptions\FacebookResponseException $e) {
-                      // When Graph returns an error
-                      echo 'Graph returned an error: ' . $e->getMessage();
-                      exit;
-                    } catch(\Facebook\Exceptions\FacebookSDKException $e) {
-                      // When validation fails or other local issues
-                      echo 'Facebook SDK returned an error: ' . $e->getMessage();
-                      exit;
-                    }
-
-                    $me = $response->getGraphUser();
-                    echo 'Logged in as ' . $me->getName();
+                    $fb = new Facebook\Facebook([
+                        'app_id' => '1805573976119672',
+                        'app_secret' => 'bb56a4c0422903333b36517c363e4cd8',
+                        'default_graph_version' => 'v2.11',
+                          // . . .
+                        ]);
+                        try {
+                            // Returns a `FacebookFacebookResponse` object
+                            $response = $fb->get(
+                              '/120905931957583',
+                              'EAACEdEose0cBAEHOXdn2VORpsoLOlRcU1f6dcb8ZA6C1AMPcHOUFWTimNJuQyowgyC6wUkmfin8N7UgZBiqZAHJIxVzN3EheqRyZABqu3XD69BaJL8ZC5rhNOSBdNMtgr1EvOGaoPAU5PpENinrbuZBIdO142H7JxD9jNxTIxRyxpZC679sFjaouZAPbK8IfFSAo75OcGoBvjwZDZD'
+                            );
+                          } catch(FacebookExceptionsFacebookResponseException $e) {
+                            echo 'Graph returned an error: ' . $e->getMessage();
+                            exit;
+                          } catch(FacebookExceptionsFacebookSDKException $e) {
+                            echo 'Facebook SDK returned an error: ' . $e->getMessage();
+                            exit;
+                          }
+                          $graphNode = $response->getGraphNode();
 
 
                     ?>
