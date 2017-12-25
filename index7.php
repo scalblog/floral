@@ -206,9 +206,10 @@
 
                 </div>
             </section>
-            <section class="facebooksdk">
+            <section class="facebook">
                 <div class="container">
-                    <h3 class="text-center facebook-title">Notre actualité 2 (Facebook SDK)</h3>
+                    <h3 class="text-center facebook-title">Notre actualité (Facebook)</h3>
+                    <p class="espace" >Découvrez nos offres promotionnelles, nos événements, nos créations.</p>
                     <?php
                     session_start();
                     require_once __DIR__ . '/vendor/autoload.php'; // change path as needed
@@ -222,8 +223,8 @@
                         try {
                             // Returns a `FacebookFacebookResponse` object
                             $response = $fb->get(
-                              '/me',
-                              'EAAZAqKPN2WXgBANjF1yhA76AS8nzvDz0h1FUams6ENEYa4VMZCW34jvPCkZCFZAC8TL2vZAQkxcQFA3ZCjOblpZBFuykMZCRuiG1wo8YzfbZBBZB1c3jWpbiMOOyXZACigfSX84ViytGd3UdHX8p5PdqmoqnnOzxkxy7DcdgMF4qrfWogZDZD'
+                              'me?fields=id,name,feed.limit(3){attachments,message,story,created_time}',
+                              'EAAZAqKPN2WXgBAO41OTKvH3czLZBeTjhmmLwciEXwvfdIPADPZB0OrY4ZCgDPe261vXHZCmBZAQthYL47m8xEmBylqbgZAhlw2czJmCQ07DfuPGygvDNpXf3Sz0SjqlflVgNkW3WhZCXEqOM0YAaM5FR8IlOx3rrBbh8Tus0Q7widK0FcKvaJUlDO8zLV0xZA2KEWgARkgs0BEQZDZD'
                             );
                           } catch(FacebookExceptionsFacebookResponseException $e) {
                             echo 'Graph returned an error: ' . $e->getMessage();
@@ -234,26 +235,29 @@
                           }
                           $graphNode = $response->getGraphNode();
 
-                      echo 'Posted by '. $graphNode['name'] . ' with id : ' . $graphNode['id'];
-                      echo 'Notez : Access token expire le 23 février 2018';
-                      echo 'Access token du compte Pascal et pas de la Page UpSport';
-                      echo 'Access token taillé pour localhost/floral';
+                      echo 'Posté sur la page : ' . $graphNode['name'];
+                      
+                    //   foreach ($graphNode['feed'][0]['attachments']['media'] as $key =>$status) {
+                    //       var_dump($key);
+                    //     }
+                        
+
+                        var_dump($graphNode['feed'][1]['attachments'])    ;
+
+                        // echo 'Posté sur la page : ' . $graphNode['feed'][0]['created_time']['date'];
+                        echo 'Posté sur la page : ' . $graphNode['feed'][1]['message'];
+                        echo ('<p>test</p>');
+                        
+                        //echo 'Pays : ' .$graphNode->getField('country');
+                        //echo 'created time : ' . $graphNode['feed']['data'][0]['created_time'];
+                        //echo 'created time : ' . $graphNode['feed']['data'][0]['id'];
+                        //print_r($graphNode);
+                        
+                        ?>
+                        <!-- <img src="<?= $graphNode['feed'][1]['attachments']['media']['src']; ?>"/>                         -->
+                        
+                        <?php
                     ?>
-
-
-
-                </div>
-            </section>
-
-
-
-
-
-            <section class="facebook">
-                <div class="container">
-                    <h3 class="text-center facebook-title">Notre actualité (Facebook)</h3>
-                    <p class="espace" >Découvrez nos offres promotionnelles, nos événements, nos créations.</p>
-
                     <div class="row">
                         <div class="col-12 col-sm-7 col-lg-7">
                             <!-- Google Maps -->
