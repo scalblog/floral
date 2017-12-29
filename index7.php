@@ -287,7 +287,16 @@
 
                     ?>
                     <div class="row">
-                    <!-- les 2 derniers posts Facebook intégrés et mis en forme -->
+                    <!-- les 2 derniers posts SECTION MESSAGE Facebook intégrés et mis en forme -->
+                        <div class="col-12 col-sm-6 col-lg-6">
+                        <p><!-- pas testé car token périmé : <?= $graphNode['feed'][0]['attachments'][0]['message'] ;?> --></p>
+                        <p><a href="https://www.facebook.com" target="_blank">Lire la suite de cette publication sur <br>notre Facebook <?= $graphNode['name'];?>.</a></p>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-6">
+                        </div>
+                    </div>
+                    <div class="row">
+                    <!-- les 2 derniers posts SECTION ATTACHMENTS Facebook intégrés et mis en forme -->
                         <div class="col-12 col-sm-6 col-lg-6">
                         <?php
                             if(isset($graphNode['feed'][0]['attachments'][0]['media'])){
