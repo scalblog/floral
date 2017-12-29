@@ -223,8 +223,8 @@
                         try {
                             // Returns a `FacebookFacebookResponse` object
                             $response = $fb->get(
-                              'me?fields=id,name,feed.limit(3){attachments,message,story,created_time}',
-                              'EAAZAqKPN2WXgBAO41OTKvH3czLZBeTjhmmLwciEXwvfdIPADPZB0OrY4ZCgDPe261vXHZCmBZAQthYL47m8xEmBylqbgZAhlw2czJmCQ07DfuPGygvDNpXf3Sz0SjqlflVgNkW3WhZCXEqOM0YAaM5FR8IlOx3rrBbh8Tus0Q7widK0FcKvaJUlDO8zLV0xZA2KEWgARkgs0BEQZDZD'
+                              '/me?fields=id,name,feed{attachments}',
+                              'EAAZAqKPN2WXgBAK3LfcGWNlFx9dRFT8Svg7aVTeAHa0ZBbxbki5WGsxipgaEzUzPO4Gg795m56iOZBKVMwc5zXTzdJPt4z3Linw76FCOlsljwzYGtZA82AoYXt3CyySvWNqjM0VkessxqoNqn4iKLbNS4hqM60Nn7rK83LvRdAj34NSbbZB68K5Pd8p2jd34TJiAf1GjgZCQZDZD'
                             );
                           } catch(FacebookExceptionsFacebookResponseException $e) {
                             echo 'Graph returned an error: ' . $e->getMessage();
@@ -237,27 +237,90 @@
 
                       echo 'Posté sur la page : ' . $graphNode['name'];
                       
-                    //   foreach ($graphNode['feed'][0]['attachments']['media'] as $key =>$status) {
+                    //   foreach ($graphNode['feed'][0]['attachments'][0] as $key =>$status) {
                     //       var_dump($key);
                     //     }
                         
 
-                        var_dump($graphNode['feed'][1]['attachments'])    ;
+                        // var_dump($graphNode['feed'][1]['attachments']['description'])    ;
 
                         // echo 'Posté sur la page : ' . $graphNode['feed'][0]['created_time']['date'];
-                        echo 'Posté sur la page : ' . $graphNode['feed'][1]['message'];
+                        // echo 'Posté sur la page : ' . $graphNode['feed'][1]['message'];
                         echo ('<p>test</p>');
+                        echo 'message contient :' . $graphNode['feed'][0]['attachments'][0]['description'] ; 
+                        echo 'message contient :' . $graphNode['feed'][1]['attachments'][0]['description'] ; 
+                        echo 'message contient :' . $graphNode['feed'][2]['attachments'][0]['description'] ; 
+                        
                         
                         //echo 'Pays : ' .$graphNode->getField('country');
                         //echo 'created time : ' . $graphNode['feed']['data'][0]['created_time'];
                         //echo 'created time : ' . $graphNode['feed']['data'][0]['id'];
                         //print_r($graphNode);
                         
-                        ?>
-                        <!-- <img src="<?= $graphNode['feed'][1]['attachments']['media']['src']; ?>"/>                         -->
+                        if(isset($graphNode['feed'][0]['attachments'][0]['media'])){
+
+                            ?>
+                            <p><img src="<?= $graphNode['feed'][0]['attachments'][0]['media']['image']['src']; ?>"/></p>
+                            <?php
+
+                        };
+
                         
-                        <?php
+                            if(isset($graphNode['feed'][1]['attachments'][0]['media'])){
+                            ?>
+
+                            <p><img src="<?= $graphNode['feed'][1]['attachments'][0]['media']['image']['src']; ?>"/></p>
+                            <?php
+                   
+                            };
+
+                        
+                            if(isset($graphNode['feed'][2]['attachments'][0]['media'])){
+
+                            ?>
+                            <p><img src="<?= $graphNode['feed'][2]['attachments'][0]['media']['image']['src']; ?>"/></p>
+                            <?php
+                            };
+                        
+
+                        
+
                     ?>
+                    <div class="row">
+                    <!-- les 2 derniers posts Facebook intégrés et mis en forme -->
+                        <div class="col-12 col-sm-6 col-lg-6">
+                        <?php
+                            if(isset($graphNode['feed'][0]['attachments'][0]['media'])){
+
+                            ?>
+                                <p><img style="max-width: 90%; " src="<?= $graphNode['feed'][0]['attachments'][0]['media']['image']['src']; ?>"/></p>
+                            <?php }; ?>    
+                                <p><?= $graphNode['feed'][0]['attachments'][0]['description'] ;?></p>
+                                <p><a href="<?= $graphNode['feed'][0]['attachments'][0]['target']['url']; ?>" target="_blank">Lire la suite de cette publication sur <br>notre Facebook <?= $graphNode['name'];?>.</a></p>
+                                <?php
+                            
+                            ?>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-6">
+                        <?php
+                            if(isset($graphNode['feed'][1]['attachments'][0]['media'])){
+
+                            ?>
+                                <p><img src="<?= $graphNode['feed'][1]['attachments'][0]['media']['image']['src']; ?>"/></p>
+                            <?php }; ?>
+
+                            <?php
+                            if(isset($graphNode['feed'][1]['attachments'][0]['description'])){
+
+                            ?>
+
+                                <p><?= $graphNode['feed'][1]['attachments'][0]['description'] ;?></p>
+                                <p><a href="<?= $graphNode['feed'][1]['attachments'][0]['target']['url']; ?>" target="_blank">Lire la suite de cette publication sur <br>notre Facebook <?= $graphNode['name'];?>.</a></p>
+                                <?php
+                            };
+                            ?>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-12 col-sm-7 col-lg-7">
                             <!-- Google Maps -->
@@ -266,8 +329,17 @@
                         </div>
                         <div class="col-12 col-sm-5 col-lg-5">
                             <!-- Page UpSPort F B s affiche ici -->
-                            <div class="fb-page" data-href="https://www.facebook.com/UpSport.UNis/" data-tabs="timeline" data-width="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/UpSport.UNis/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/UpSport.UNis/">UP SPORT Unis pour le Sport</a></blockquote></div>
+                            <div>
+                            <?php
+                            if(isset($graphNode['feed'][2]['attachments'][0]['media'])){
 
+                            ?>
+                                <p><img src="<?= $graphNode['feed'][2]['attachments'][0]['media']['image']['src']; ?>"/></p>
+                                <p><?= $graphNode['feed'][2]['attachments'][0]['description'] ;?></p>
+                                <p><a href="<?= $graphNode['feed'][2]['attachments'][0]['target']['url']; ?>" target="_blank">Lire la suite de cette publication sur <br>notre Facebook <?= $graphNode['name'];?>.</a></p>
+                                <?php
+                            };
+                            ?>
                         </div>
                     </div>
 
