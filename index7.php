@@ -216,15 +216,15 @@
                     // require_once 'vendor/autoload.php'; // change path as needed
 
                     $fb = new Facebook\Facebook([
-                        'app_id' => '1805573976119672',
-                        'app_secret' => 'bb56a4c0422903333b36517c363e4cd8',
+                        'app_id' => '139120300108641',
+                        'app_secret' => 'f7ef3e983a0c31019e4eb2bebb1e75a4',
                         'default_graph_version' => 'v2.2',
                         ]);
                         try {
                             // Returns a `FacebookFacebookResponse` object
                             $response = $fb->get(
                               '/me?fields=id,name,feed{attachments}',
-                              'EAAZAqKPN2WXgBAK3LfcGWNlFx9dRFT8Svg7aVTeAHa0ZBbxbki5WGsxipgaEzUzPO4Gg795m56iOZBKVMwc5zXTzdJPt4z3Linw76FCOlsljwzYGtZA82AoYXt3CyySvWNqjM0VkessxqoNqn4iKLbNS4hqM60Nn7rK83LvRdAj34NSbbZB68K5Pd8p2jd34TJiAf1GjgZCQZDZD'
+                              'EAABZBh3gRq2EBANpZBqf0VcYRrrf6avyah0fAUtSZBPZCGulVgeZBBTIbWjEUhSZCQknHBuSRZCcjbtw0QG6KEXg5XKYsSkYUzVa1LSDyS5VGxBl4URZAsheGC1dEklYCIvl802KIDn0fyEZBqUdf9O0I7rCvNww5TMgPQN4ITNKE6wZDZD'
                             );
                           } catch(FacebookExceptionsFacebookResponseException $e) {
                             echo 'Graph returned an error: ' . $e->getMessage();
