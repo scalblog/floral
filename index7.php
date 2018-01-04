@@ -211,7 +211,7 @@
                     <h3 class="text-center facebook-title">Notre actualité (Facebook)</h3>
                     <p class="espace" >Découvrez nos offres promotionnelles, nos événements, nos créations.</p>
                     <?php
-                    session_start();
+                    //session_start();
                     require_once __DIR__ . '/vendor/autoload.php'; // change path as needed
                     // require_once 'vendor/autoload.php'; // change path as needed
 
