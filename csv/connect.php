@@ -8,8 +8,10 @@ $user = 'root';
 $password = '';
 
 try {
-    $dbh = new PDO($dsn, $user, $password);
-} catch (PDOException $e) {
+    $pdo = new PDO($dsn, $user, $password);
+} 
+
+catch (PDOException $e) {
     echo 'La connexion à la base de données a échoué : ' . $e->getMessage();
 }
 

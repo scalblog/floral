@@ -2,6 +2,10 @@
 
 
 <?php
+
+require_once('functions.php');
+getAllLines();
+
 $row = 1;
 if (($handle = fopen("tips.csv", "r")) !== FALSE) {
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {

@@ -1,5 +1,16 @@
 <?php
 
+function getAllLines() 
+{
+	require_once('connect.php');
+	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	$res = $pdo->query('SELECT * FROM tips');
+	$data = $res->fetchAll(PDO::FETCH_OBJ);
+	var_dump($data[0]->sex);
+}
+
+
+
 // Pour récupérer le planing complet avec toutes les activités
 function getRendezvous()
 {
