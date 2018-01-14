@@ -51,7 +51,7 @@
         if($centre->fields->arro == 75001) {
         ?>
             <ul>
-                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/centre+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
+                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/formation+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
             </ul>
         <?php    }
         }
@@ -67,7 +67,7 @@
         if($centre->fields->arro == 75002) {
         ?>
             <ul>
-                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/centre+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
+                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/formation+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
             </ul>
         <?php    }
         }
@@ -82,7 +82,7 @@
         if($centre->fields->arro == 75003) {
         ?>
             <ul>
-                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/centre+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
+                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/formation+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
             </ul>
         <?php    }
         }
@@ -97,7 +97,7 @@
         if($centre->fields->arro == 75004) {
         ?>
             <ul>
-                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/centre+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
+                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/formation+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
             </ul>
         <?php    }
         }
@@ -111,7 +111,7 @@
         if($centre->fields->arro == 75005) {
         ?>
             <ul>
-                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/centre+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
+                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/formation+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
             </ul>
         <?php    }
         }
@@ -125,7 +125,7 @@
         if($centre->fields->arro == 75006) {
         ?>
             <ul>
-                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/centre+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
+                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/formation+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
             </ul>
         <?php    }
         }
@@ -139,7 +139,7 @@
         if($centre->fields->arro == 75007) {
         ?>
             <ul>
-                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/centre+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
+                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/formation+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
             </ul>
         <?php    }
         }
@@ -153,7 +153,7 @@
         if($centre->fields->arro == 75008) {
         ?>
             <ul>
-                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/centre+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
+                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/formation+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
             </ul>
         <?php    }
         }
@@ -167,7 +167,7 @@
         if($centre->fields->arro == 75009) {
         ?>
             <ul>
-                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/centre+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
+                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/formation+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
             </ul>
         <?php    }
         }
@@ -181,7 +181,7 @@
         if($centre->fields->arro == 75010) {
         ?>
             <ul>
-                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/centre+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
+                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/formation+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
             </ul>
         <?php    }
         }
@@ -195,7 +195,7 @@
         if($centre->fields->arro == 75011) {
         ?>
             <ul>
-                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/centre+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
+                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/formation+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
             </ul>
         <?php    }
         }
@@ -209,7 +209,7 @@
         if($centre->fields->arro == 75012) {
         ?>
             <ul>
-                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/centre+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
+                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/formation+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
             </ul>
         <?php    }
         }
@@ -223,7 +223,7 @@
         if($centre->fields->arro == 75013) {
         ?>
             <ul>
-                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/centre+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
+                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/formation+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
             </ul>
         <?php    }
         }
@@ -237,7 +237,7 @@
         if($centre->fields->arro == 75014) {
         ?>
             <ul>
-                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/centre+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
+                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/formation+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
             </ul>
         <?php    }
         }
@@ -251,7 +251,7 @@
         if($centre->fields->arro == 75015) {
         ?>
             <ul>
-                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/centre+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
+                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/formation+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
             </ul>
         <?php    }
         }
@@ -265,7 +265,7 @@
         if($centre->fields->arro == 75016) {
         ?>
             <ul>
-                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/centre+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
+                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/formation+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
             </ul>
         <?php    }
         }
@@ -279,7 +279,7 @@
         if($centre->fields->arro == 75017) {
         ?>
             <ul>
-                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/centre+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
+                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/formation+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
             </ul>
         <?php    }
         }
@@ -293,7 +293,7 @@
         if($centre->fields->arro == 75018) {
         ?>
             <ul>
-                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/centre+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
+                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/formation+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
             </ul>
         <?php    }
         }
@@ -307,7 +307,7 @@
         if($centre->fields->arro == 75019) {
         ?>
             <ul>
-                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/centre+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
+                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/formation+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
             </ul>
         <?php    }
         }
@@ -321,7 +321,7 @@
         if($centre->fields->arro == 75020) {
         ?>
             <ul>
-                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/centre+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
+                <li>index n°<?= $key ?> <?= $centre->fields->arro ?> : <a href="https://www.google.fr/maps/search/formation+<?= $centre->fields->adresse_complete?>+<?= $centre->fields->arro ?>/" target="_blank"><?= $centre->fields->adresse_complete ?></a></li>
             </ul>
         <?php    }
         }
