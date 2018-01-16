@@ -3,8 +3,16 @@
 
 <?php
 
+// get the current URL
+$actual_link = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+echo $actual_link;
+
 require_once('functions.php');
-getAllLines();
+$lines = getAllLines();
+foreach ($lines as $line) : ?>
+
+    <p><?= $line->sex; ?></p>
+<?php endforeach;
 
 $row = 1;
 if (($handle = fopen("tips.csv", "r")) !== FALSE) {
@@ -20,4 +28,14 @@ if (($handle = fopen("tips.csv", "r")) !== FALSE) {
     }
     fclose($handle);
 }
+
+
+if($lines[0]->sex == 'Male') {
+   
+    echo ("tentative de connexion");
+    require_once('functions.php')
+    setNewTip(1);
+}
+else { echo ("Une erreur est survenue : condition non remplie.");};
+
 ?>

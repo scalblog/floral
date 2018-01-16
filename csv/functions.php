@@ -6,9 +6,21 @@ function getAllLines()
 	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	$res = $pdo->query('SELECT * FROM tips');
 	$data = $res->fetchAll(PDO::FETCH_OBJ);
-	var_dump($data[0]->sex);
+	return $data;
+	$req->closeCursor();
+	
 }
 
+function setNewTip($id){
+	require_once('connect.php');
+	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+	$stmt = $pdo->prepare("UPDATE christran SET tip = :tip WHERE id_tips = :id");
+
+	$stmt->bindValue('tip', $tip, PDO::PARAM_INT);
+	$stmt->bindValue('id_tips', $id, PDO::PARAM_INT);
+
+	$stmt->execute();
+}
 
 
 // Pour récupérer le planing complet avec toutes les activités
