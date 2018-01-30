@@ -34,10 +34,35 @@ $(function(){
         else if (!$("#address").val().match(/^[a-z]+$/i)){
             $("#address").next(".error-message").fadeIn().text('La saisie de votre adresse n\'est pas correcte.');
             valid = false;
+        }
         else {
             $("#address").next(".error-message").fadeOut();
         }
         
         return valid;
     });
+
+
+    $("#envoi").click(function(){
+        if($("input[name=renseignement]").val() == "exemples") {
+            maValeur = $("input[name=renseignement]").val();
+            alert( maValeur + " : c\'est la valeur saisie" );
+        }
+        age = $("input[name=age]").val();
+        if($("input[name=age]").val() >= 18 && $("input[name=age]").val() <= 109) {
+            alert( "Vous avez " + age + " ans, vous êtes donc majeur." );
+        }
+        else if($("input[name=age]").val() <= 18 && $("input[name=age]").val() >=0 ) {
+            alert (" Vous êtes mineur et ne pouvez pas acheter de cigarettes ici.")
+        }
+
+        else if($("input[name=age]").val() >= 110) {
+            confirm ("Veuillez confirmer que vous avez " + age + " ans.");
+        }
+        else {
+            alert ("Veuillez saisir votre âge, merci.");
+        }
+    });
+    
+    
 });
