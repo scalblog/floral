@@ -18,6 +18,10 @@ $(function(){
             $("#name").next(".error-message").fadeIn().text('Vous n\'avez pas saisi votre nom.');
             valid = false;
         }
+        else if (!$("#name").val().match(/^[a-z]+$/i)){
+            $("#name").next(".error-message").fadeIn().text('La saisie de votre nom n\'est pas correcte.');
+            valid = false;
+        }
         else {
             $("#name").next(".error-message").fadeOut();
         }
@@ -27,7 +31,9 @@ $(function(){
             $("#address").next(".error-message").fadeIn().text("Vous n\'avez pas mentionné votre adresse.");
             valid = false;
         }
-        
+        else if (!$("#address").val().match(/^[a-z]+$/i)){
+            $("#address").next(".error-message").fadeIn().text('La saisie de votre adresse n\'est pas correcte.');
+            valid = false;
         else {
             $("#address").next(".error-message").fadeOut();
         }
